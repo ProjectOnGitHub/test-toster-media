@@ -1,17 +1,11 @@
-$color-text-primary: #ffffff;
-$color-text-secondary: #0a2756;
-$color-text-tertiary: #007dfe;
-$color-error: #fb5555;
-$color-text-quaternary: rgba(0, 0, 0, 0.5);
-$color-border: #c4c4c4;
+$color-text-primary: #2c2b31;
+$color-text-secondary: #111111;
+$color-text-tertiary: #ffffff;
+$color-decorate-primary: #37d997;
+$color-decorate-secondary: #f19d2f;
+$color-decorate-tertiary: #ffd1ac;
 
-$header-height: 65px;
-
-$desktop: 1240px;
-$desktop-small: 1080px;
-$tablet-large: 900px;
-$tablet: 768px;
-$tablet-small: 640px;
-$smartphone: 480px;
+$mobile: 390px;
+$mobile-width: $mobile;
 
 $mouse-device: '(hover: hover) and (pointer: fine)';

@@ -12,9 +12,13 @@
     <div class="root">
       <header class="header">
         <div class="header__container">
-          <div class="header__offer">SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA</div>
+          <p class="header__offer">SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA</p>
           <div class="header__logo">
-            <svg class="icon icon_logo"></svg>
+            <img
+              src="<%=require('../src/images/logo.png')%>"
+              alt="Logo"
+              class="header__logo-image"
+            />
             <span class="header__logo-text">orthopedic slippers</span>
           </div>
         </div>
@@ -22,15 +26,22 @@
       <main class="main">
         <section class="offer">
           <img
-            src=""
+            srcset="
+              <%=require('../src/images/slippers-small.png')%>   390w,
+              <%=require('../src/images/slippers-medium.png')%>  768w,
+              <%=require('../src/images/slippers.png')%>        1024w
+            "
+            sizes="(max-width: 400px) 390px,
+                    (max-width: 768px) 600px, 800px"
+            src="<%=require('../src/images/slippers.png')%>"
             alt=""
             class="offer__image"
           />
-          <div class="offer__label">
+          <div class="offer__label offer__label_timer">
             <p class="offer__label-title">Limited offer</p>
             <p class="offer__label-count">04:51:16</p>
           </div>
-          <div class="offer__label">
+          <div class="offer__label offer__label_price">
             <p class="offer__label-price offer__label-price_old">R 250.00</p>
             <p class="offer__label-price offer__label-price_new">R 160.00</p>
           </div>

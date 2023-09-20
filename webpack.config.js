@@ -33,16 +33,16 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.svg$/, // Загрузчик для SVG-файлов
-        include: path.resolve(__dirname, 'src/svg'), // Директория с иконками SVG
+        test: /\.svg$/,
+        include: path.resolve(__dirname, 'src/svg'),
         use: [
           {
             loader: 'svg-sprite-loader',
             options: {
-              extract: true, // Извлекает и создает спрайт
+              extract: true,
             },
           },
-          'svgo-loader', // Минимизирует SVG
+          'svgo-loader',
         ],
       },
       {
