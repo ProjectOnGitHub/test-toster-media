@@ -26,10 +26,13 @@
   }
 }
 
-@mixin defaultTitle($font-size) {
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 1.4;
+@mixin defaultTitle($fontSize: 19px) {
+  font-weight: 700;
+  font-size: $fontSize;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: normal;
+  color: $color-text-primary;
 }
 
 @mixin button($padding: 0px, $bgColor: transparent) {

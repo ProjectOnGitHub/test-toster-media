@@ -26,58 +26,72 @@
       <main class="main">
         <section class="offer">
           <img
-            srcset="
-              <%=require('../src/images/slippers-small.png')%>   390w,
-              <%=require('../src/images/slippers-medium.png')%>  768w,
-              <%=require('../src/images/slippers.png')%>        1024w
-            "
-            sizes="(max-width: 400px) 390px,
-                    (max-width: 768px) 600px, 800px"
+            srcset="<%=require('../src/images/slippers-small.png')%> 400w"
+            sizes="(min-width: 390px) 400px"
             src="<%=require('../src/images/slippers.png')%>"
-            alt=""
+            alt="Offer image"
             class="offer__image"
           />
           <div class="offer__label offer__label_timer">
             <p class="offer__label-title">Limited offer</p>
-            <p class="offer__label-count">04:51:16</p>
+            <p class="offer__label-count"></p>
           </div>
           <div class="offer__label offer__label_price">
             <p class="offer__label-price offer__label-price_old">R 250.00</p>
             <p class="offer__label-price offer__label-price_new">R 160.00</p>
           </div>
-          <div class="offer__price"></div>
         </section>
         <section class="product">
           <ul class="product-rating">
-            <li class="product-rating__item">
-              <span class="product-score">Excellent 4.8/5</span>
-            </li>
+            <li class="product-rating__item">Excellent 4.8/5</li>
             <li class="product-rating__item">
               <a
-                href=""
+                href="https://trustpilot.com"
+                target="_blank"
                 class="product-rating__link"
               >
-                Trustpilot
+                <svg class="icon icon__trustpilot">
+                  <use xlink:href="sprite.svg#icon-trustpilot"></use>
+                </svg>
               </a>
             </li>
-            <li class="product-rating__item">
-              <a
-                href=""
-                class="product-rating__link"
-              >
-                Trustpilot
-              </a>
-            </li>
-            <li class="product-rating__item">
-              <span class="product-rating__label">best selling</span>
-            </li>
+            <li class="product-rating__item product-rating__item_best">best selling</li>
           </ul>
           <h1 class="product__title">Orthopedic Slippers</h1>
           <div class="carousel">
             <ul class="carousel__list">
-              <li class="carousel__item">
+              <li class="carousel__list-item">
                 <img
-                  src=""
+                  srcset="<%=require('../src/images/black-small.jpeg')%> 370w"
+                  sizes="(max-width: 390px) 370px"
+                  src="<%=require('../src/images/black.jpeg')%>"
+                  alt=""
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__list-item">
+                <img
+                  srcset="<%=require('../src/images/orange-small.jpeg')%> 370w"
+                  sizes="(max-width: 390px) 370px"
+                  src="<%=require('../src/images/orange.jpeg')%>"
+                  alt=""
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__list-item">
+                <img
+                  srcset="<%=require('../src/images/pink-small.jpeg')%> 370w"
+                  sizes="(max-width: 390px) 370px"
+                  src="<%=require('../src/images/pink.jpeg')%>"
+                  alt=""
+                  class="carousel__image"
+                />
+              </li>
+              <li class="carousel__list-item">
+                <img
+                  srcset="<%=require('../src/images/yellow-small.jpeg')%> 370w"
+                  sizes="(max-width: 390px) 370px"
+                  src="<%=require('../src/images/yellow.jpeg')%>"
                   alt=""
                   class="carousel__image"
                 />
@@ -86,7 +100,28 @@
             <ul class="carousel__preview-list">
               <li class="carousel__preview-item">
                 <img
-                  src=""
+                  src="<%=require('../src/images/black-preview.jpeg')%>"
+                  alt=""
+                  class="carousel__preview-image"
+                />
+              </li>
+              <li class="carousel__preview-item">
+                <img
+                  src="<%=require('../src/images/orange-preview.jpeg')%>"
+                  alt=""
+                  class="carousel__preview-image"
+                />
+              </li>
+              <li class="carousel__preview-item">
+                <img
+                  src="<%=require('../src/images/pink-preview.jpeg')%>"
+                  alt=""
+                  class="carousel__preview-image"
+                />
+              </li>
+              <li class="carousel__preview-item">
+                <img
+                  src="<%=require('../src/images/yellow-preview.jpeg')%>"
                   alt=""
                   class="carousel__preview-image"
                 />
@@ -103,7 +138,6 @@
               Shipping from Johannesburg
             </p>
           </div>
-
           <div class="users-score">
             <ul class="users-score__list">
               <li class="users-score__item"></li>
