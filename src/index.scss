@@ -81,31 +81,31 @@
   &__label {
     @include flexible();
     position: absolute;
+    bottom: 14px;
     flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     max-width: max-content;
-    height: 100%;
+    height: auto;
     font-weight: 700;
     line-height: normal;
-    align-items: center;
+    text-align: center;
     color: $color-text-tertiary;
     text-transform: uppercase;
     border-radius: 6px;
-    height: auto;
-    bottom: 14px;
 
     &_timer {
-      background-color: $color-decorate-secondary;
-      gap: 10px;
       left: 13px;
       padding: 9px 7px;
+      background-color: $color-decorate-secondary;
+      gap: 10px;
     }
 
     &_price {
-      background-color: $color-decorate-primary;
-      gap: 8px;
       right: 13px;
       padding: 6px 7px;
+      background-color: $color-decorate-primary;
+      gap: 8px;
     }
 
     &-title,
@@ -120,6 +120,7 @@
     }
 
     &-count {
+      min-width: 100px;
       font-size: 21px;
     }
 
