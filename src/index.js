@@ -53,13 +53,15 @@ function setCurrentSlide(currentItem) {
 }
 
 function clickPreview(e) {
-  const currentItem = e.target.closest('.carousel__preview-item');
-  const activeItem = preview.querySelector('.carousel__preview-item_active');
+  const targetItem = e.target.closest('.carousel__preview-item');
 
-  if (currentItem !== activeItem) {
-    activeItem.classList.remove('carousel__preview-item_active');
-    currentItem.classList.add('carousel__preview-item_active');
-    setCurrentSlide(currentItem);
+  if (targetItem) {
+    const activeItem = preview.querySelector('.carousel__preview-item_active');
+    if (targetItem !== activeItem) {
+      activeItem.classList.remove('carousel__preview-item_active');
+      targetItem.classList.add('carousel__preview-item_active');
+      setCurrentSlide(targetItem);
+    }
   }
 }
 
