@@ -195,15 +195,20 @@
   flex-direction: column;
   gap: 20px;
 
+  &__container {
+    overflow: hidden;
+  }
+
   &__list {
     @include unmarkedList;
     @include flexible();
-    overflow: hidden;
-    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
 
     &-item {
       @include flexible();
       flex-shrink: 0;
+      border-radius: 20px;
+      overflow: hidden;
     }
   }
 
@@ -223,6 +228,13 @@
     &-item {
       overflow: hidden;
       border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+
+      &_active {
+        opacity: 0.4;
+        box-shadow: 0px 4px 4px 0px rgba($color-decorate-quaternary, 0.25);
+      }
     }
 
     &-image {
