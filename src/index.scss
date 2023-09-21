@@ -243,11 +243,10 @@
 
     &-button {
       @include flexible();
-      @include button(12px 20px);
+      @include button(12px 20px, $color-decorate-primary);
       font-size: 30px;
       color: $color-text-tertiary;
       text-transform: uppercase;
-      background-color: $color-decorate-primary;
       border-radius: 10px;
     }
   }
@@ -326,6 +325,11 @@
       border-radius: 10px;
       cursor: pointer;
       transition: all 0.5s ease-in-out;
+      opacity: 1;
+
+      &:hover {
+        box-shadow: 0px 4px 4px 0px rgba($color-decorate-dark, 0.25);
+      }
 
       &_active {
         box-shadow: 0px 4px 4px 0px rgba($color-decorate-dark, 0.25);
