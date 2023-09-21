@@ -42,8 +42,12 @@
 
     &::before,
     &::after {
-      content: '\1F1FF \1F1E6';
-      font-size: 8px;
+      content: '';
+      width: 12px;
+      height: auto;
+      background-image: url('../src/images/icon-zar.png');
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
   &__logo {
