@@ -13,8 +13,8 @@
   grid-template-columns: 1fr;
   justify-items: center;
 
-  @media screen and (min-width: $mobile) {
-    max-width: $mobile;
+  @media screen and (min-width: 390px) {
+    max-width: $mobile-width;
   }
 }
 
@@ -42,12 +42,7 @@
 
     &::before,
     &::after {
-      content: '';
-      width: 12px;
-      height: auto;
-      background-image: url('../src/images/icon-zar.png');
-      background-size: contain;
-      background-repeat: no-repeat;
+      @include iconFlag;
     }
   }
   &__logo {
@@ -185,12 +180,47 @@
   &__title {
     @include defaultTitle();
   }
+
+  &__info {
+    @include flexible();
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: normal;
+    gap: 12px;
+  }
+}
+
+.delivery-info {
+  @include flexible();
+  flex-direction: column;
+  gap: 12px;
+
+  &__text {
+    @include flexible();
+    margin: 0;
+    gap: 4px;
+
+    &::after {
+      @include iconFlag();
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
 }
 
 .icon {
   &__trustpilot {
     @include flexible(72px);
     height: 18px;
+  }
+
+  &__star {
+    @include flexible(14px);
+    height: 13px;
+    gap: 4px;
   }
 }
 
@@ -211,8 +241,8 @@
     &-item {
       @include flexible();
       flex-shrink: 0;
-      border-radius: 20px;
       overflow: hidden;
+      border-radius: 20px;
     }
   }
 
@@ -232,12 +262,12 @@
     &-item {
       overflow: hidden;
       border-radius: 10px;
-      transition: all 0.5s ease-in-out;
       cursor: pointer;
+      transition: all 0.5s ease-in-out;
 
       &_active {
-        opacity: 0.4;
         box-shadow: 0px 4px 4px 0px rgba($color-decorate-quaternary, 0.25);
+        opacity: 0.4;
       }
     }
 
@@ -247,5 +277,17 @@
       min-height: 66px;
       object-fit: cover;
     }
+  }
+}
+
+.users-score {
+  @include flexible();
+  flex-wrap: nowrap;
+  gap: 10px;
+
+  &__list {
+    @include flexible();
+    @include unmarkedList;
+    max-width: max-content;
   }
 }

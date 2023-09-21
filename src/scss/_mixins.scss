@@ -46,3 +46,12 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
+@mixin iconFlag($width: 12px, $height: 12px) {
+  content: '';
+  width: $width;
+  height: $height;
+  background-image: url('../src/images/icon-zar.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

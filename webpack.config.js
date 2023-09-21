@@ -29,8 +29,18 @@ module.exports = {
         exclude: '/node_modules/',
       },
       {
-        test: /\.(png|jpg|jpeg|gif|woff(2)?|eot|ttf|otf)$/,
+        test: /\.(png|jpg|jpeg|gif)$/,
         type: 'asset/resource',
+        generator: {
+          filename: 'images/[name].[hash:8][ext]',
+        },
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name].[hash:8][ext]',
+        },
       },
       {
         test: /\.svg$/,
@@ -44,6 +54,14 @@ module.exports = {
           },
           'svgo-loader',
         ],
+      },
+      {
+        test: /\.svg$/,
+        include: path.resolve(__dirname, 'src/svg'),
+        type: 'asset/resource',
+        generator: {
+          filename: 'svg/[name].[hash:8][ext]',
+        },
       },
       {
         test: /\.(s*)css$/,
