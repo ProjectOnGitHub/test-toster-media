@@ -2,4 +2,4 @@
 @import 'scss/_variables.scss';
 @import 'vendor/normalize.css';
 @import 'vendor/fonts/fonts.css';
-@import 'index.scss';
+@import '_index.scss';

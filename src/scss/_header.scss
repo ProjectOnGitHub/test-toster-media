@@ -1,0 +1,49 @@
+.header {
+  &__container {
+    @include flexible();
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-decorate-secondary;
+  }
+
+  &__offer {
+    @include flexible();
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    max-width: max-content;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    color: $color-text-primary;
+    text-transform: uppercase;
+    gap: 4px;
+
+    &::before,
+    &::after {
+      @include iconFlag;
+    }
+  }
+  &__logo {
+    @include flexible();
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    padding: 19px 10px;
+    background-color: $color-decorate-tertiary;
+    gap: 10px;
+
+    &-image {
+      width: 100%;
+      max-width: 281px;
+      height: auto;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}

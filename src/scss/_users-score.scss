@@ -1,0 +1,11 @@
+.users-score {
+  @include flexible();
+  flex-wrap: nowrap;
+  gap: 10px;
+
+  &__list {
+    @include flexible();
+    @include unmarkedList;
+    max-width: max-content;
+  }
+}

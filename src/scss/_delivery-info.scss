@@ -1,0 +1,19 @@
+.delivery-info {
+  @include flexible();
+  flex-direction: column;
+  gap: 12px;
+
+  &__text {
+    @include flexible();
+    margin: 0;
+    gap: 4px;
+
+    &::after {
+      @include iconFlag();
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.icon {
+  &__trustpilot {
+    @include flexible(72px);
+    height: 18px;
+  }
+
+  &__star {
+    @include flexible(14px);
+    height: 13px;
+    gap: 4px;
+  }
+}

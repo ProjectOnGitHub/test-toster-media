@@ -1,0 +1,8 @@
+.root {
+  @include gridable();
+  grid-template-columns: 1fr;
+  justify-items: center;
+  font-weight: 400;
+  font-family: 'Gotham Pro', Arial, sans-serif;
+  color: $color-text-primary;
+}
