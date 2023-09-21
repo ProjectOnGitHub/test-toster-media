@@ -365,30 +365,6 @@ template {
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url(fonts/GothamPro-BoldItalic.59aeb06b.eot);
-  src: local('Gotham Pro Bold Italic'), local('GothamPro-BoldItalic'),
-      url(fonts/GothamPro-BoldItalic.59aeb06b.eot?#iefix) format('embedded-opentype'),
-      url(fonts/GothamPro-BoldItalic.0e4f88c3.woff2) format('woff2'),
-      url(fonts/GothamPro-BoldItalic.a9ee7ec7.woff) format('woff'),
-      url(fonts/GothamPro-BoldItalic.c2122a0f.ttf) format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url(fonts/GothamPro-Italic.d5763c15.eot);
-  src: local('Gotham Pro Italic'), local('GothamPro-Italic'),
-      url(fonts/GothamPro-Italic.d5763c15.eot?#iefix) format('embedded-opentype'),
-      url(fonts/GothamPro-Italic.ae18b5c4.woff2) format('woff2'),
-      url(fonts/GothamPro-Italic.922fd60a.woff) format('woff'),
-      url(fonts/GothamPro-Italic.4f249f17.ttf) format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gotham Pro';
   src: url(fonts/GothamPro.095b1487.eot);
   src: local('Gotham Pro'), local('GothamPro'),
       url(fonts/GothamPro.095b1487.eot?#iefix) format('embedded-opentype'),
