@@ -18,21 +18,21 @@
   position: relative;
   text-decoration: none;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
   opacity: 1;
+  transition: 0.4s ease-in-out;
 
   &:hover {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 }
 
 @mixin defaultTitle($fontSize: 19px) {
+  margin: 0;
   font-weight: 700;
   font-size: $fontSize;
-  margin: 0;
-  text-transform: uppercase;
   line-height: normal;
   color: $color-text-primary;
+  text-transform: uppercase;
 }
 
 @mixin button($padding: 0px, $bgColor: transparent) {
@@ -44,7 +44,12 @@
   border: none;
   transform: scale(1);
   cursor: pointer;
-  transition: 0.5s;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 @mixin iconFlag($width: 12px, $height: 12px) {

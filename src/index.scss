@@ -222,14 +222,14 @@
       text-align: center;
       text-transform: uppercase;
       background-color: $color-text-tertiary;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      appearance: none;
       background-image: url('../src/images/icon-arrow.png');
       background-repeat: no-repeat;
       background-position-x: calc(100% - 9px);
       background-position-y: 50%;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      appearance: none;
 
       &:focus {
         outline: 1px solid rgba($color-decorate-primary, 0.4);
@@ -239,6 +239,16 @@
     &-option {
       padding-top: 20px;
       font-size: 18px;
+    }
+
+    &-button {
+      @include flexible();
+      @include button(12px 20px);
+      font-size: 30px;
+      color: $color-text-tertiary;
+      text-transform: uppercase;
+      background-color: $color-decorate-primary;
+      border-radius: 10px;
     }
   }
 }

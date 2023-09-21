@@ -66,3 +66,10 @@ function clickPreview(e) {
 }
 
 preview.addEventListener('click', clickPreview);
+
+function goToLink(e) {
+  e.preventDefault();
+  window.open('https://www.youtube.com/', '_blank');
+}
+
+document.querySelector('.product__order-button').addEventListener('click', goToLink);
